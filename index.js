@@ -130,13 +130,13 @@ const displayItem = (item) => {
     const buyButton = document.getElementById("buyButton");
     buyButton.style.display = "block";
 
-    buyButton.onclick = function() {
+    buyButton.onclick = () => {
         displayForm(item);
     };
 };
 
 
-const displayForm = (item) => {
+const displayForm = () => {
     
     const formOrder = document.getElementById("formOrder");
     formOrder.style.display = "block";
